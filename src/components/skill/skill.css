@@ -1,0 +1,82 @@
+.skill-overall{
+    min-height: 100vh;
+    color: white;
+    padding-top: 60px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+
+}
+.skill-overall::after{
+    content: " ";
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: blue;
+    z-index: -1;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    filter: blur(200px);
+}
+.skill-header{
+    text-align: center;
+}
+.skill-box{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+.frontend-box,.backend-box,.other-box{
+    min-height: 300px;
+    width: 30%;
+    background-color: rgba(41, 41, 41, 0.685);
+    border-radius: 10px;
+    border: 2px solid #029ad6;
+    text-align: center;
+    overflow: hidden;
+}
+ .skills-box{
+    min-height: 250px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    /* background-color: red; */
+ }
+ .skill-name-box{
+    height: 40px;
+    min-width: 70px;
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.skill-name-box img{
+    height: 20px;
+}
+@media (max-width:750px) {
+    .skill-box{
+        flex-direction: column;
+    }
+    .frontend-box,.backend-box,.other-box{
+        width: 95%;
+    }
+}
+@media (min-width:750px) and (max-width:800px){
+    .frontend-box,.backend-box,.other-box{
+        width: 45%;
+    }
+}

@@ -1,0 +1,111 @@
+.project-overall{
+    min-height: 100vh;
+    color: white;
+    z-index: 0;
+    position: relative;
+    padding-top: 60px;
+    /* border: 1px solid yellow; */
+}
+.project-overall::after{
+    content: " ";
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: blue;
+    z-index: -1;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    filter: blur(200px);
+}
+.project-header{
+    text-align: center;
+}
+.project-box{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+.project-card{
+    min-height: 350px;
+    width: 320px;
+    background-color: rgba(41, 41, 41, 0.685);
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 0 20px black;
+    transition: all 5s;
+}
+.project-card:hover .project-img{
+    transition: all .5s;
+    transform: scale(1.05);
+}
+.project-card:hover{
+    background:linear-gradient(rgba(0, 0, 255, 0.144) 20%,rgb(27, 27, 27)90%);
+    transition: all 1s;
+}
+.project-img-box{
+    min-height: 180px;
+    width: 98%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    /* border: 1px solid white; */
+}
+.project-img{
+    min-height: 180px;
+    width: 100%;
+    border-radius: 8px;
+}
+.tool-box{
+    min-height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+    /* border: 1px solid white; */
+}
+.tool-img{
+    height: 22px;
+}
+.project-title-box{
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+.project-title{
+    color: white;
+    font-weight: 600;
+    /* background-color: red; */
+}
+.project-link-box{
+    min-height: 40px;
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+}
+.project-link-icon-circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.project-link-icon-circle:hover{
+    color:blue;
+}

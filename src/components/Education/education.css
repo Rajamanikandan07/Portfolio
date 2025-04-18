@@ -1,0 +1,145 @@
+.education-overall{
+    min-height: 100vh;
+    color: white;
+    padding-top: 60px;
+    overflow: hidden;
+}
+.education-header{
+    text-align: center;
+}
+.education-container{
+    min-height: 500px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+.vericatl-timeline{
+    min-height: 500px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    animation: timeline;
+    animation-duration: 5s;
+    transition: all 1s;
+}
+.education-box{
+    min-height: 150px;
+    width: 40%;
+    border-radius: 10px;
+    position: relative;
+    border: 2px solid #029ad6;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.education-box-left{
+    margin-left: 7%;
+}
+.education-box-right{
+    margin-left: 53%;
+}
+.education-box-left::after{
+    content: " ";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #029ad6;
+    border: 2px solid black;
+    position: absolute;
+    right: -45px;
+    top: 45%;
+}
+.education-box-right::after{
+    content: " ";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #029ad6;
+    border: 2px solid black;
+    position: absolute;
+    left: -42.5px;
+    top: 45%;
+}
+.degree-header{
+    text-align: center;
+    color: sandybrown;
+}
+.institute-name{
+    padding-top: 10px;
+}
+.degree-name{
+    padding-top: 10px;
+}
+.grade{
+    padding-top: 5px;
+    color: gray;
+}
+.year{
+    height: 20px;
+    width: 65px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+
+@keyframes timeline {
+    0%{
+        min-height: 0;
+    }
+    100%{
+        min-height: 500px;
+    }
+    
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .education-container{
+        width: 100%;
+        padding: 10px;
+        gap: 20px;
+    }
+    .vericatl-timeline{
+        display: none;
+    }
+    .education-box-left::after,.education-box-right::after{
+        display: none;
+    }
+    .education-box-left,.education-box-right{
+        min-height: 120px;
+        width: 100%;
+        margin: auto;
+    }
+    .year{
+        height: 15px;
+        width: 52px;
+        font-size: 9.5px;
+        right: 2px;
+        font-weight: 700;
+    }
+}
+@media (min-width:500px) and (max-width:800px){
+    .education-container{
+        width: 100%;
+    }
+    .education-box-left,.education-box-right{
+        width: 45%;
+    }
+    .education-box-left{
+        margin-left: 1%;
+    }
+    .education-box-right{
+    margin-left: 54%;
+}
+}

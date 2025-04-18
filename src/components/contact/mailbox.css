@@ -1,0 +1,75 @@
+form{
+    min-height: 400px;
+    width: 50%;
+    background-color: rgba(41, 41, 41, 0.685);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input{
+    height: 40px;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+}
+textarea{
+    height: 180px;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    resize: none;
+}
+.send-btn{
+    height: 40px;
+    width: 150px;
+    background: none;
+    border-radius: 5px;
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    /* border: 1px solid white; */
+    /* background:linear-gradient(43deg, yellow,red); */
+    background:blue;
+}
+label{
+    font-weight: 600;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.774);
+}
+.success-msg{
+    color: lime;
+    font-size: 18px;
+    text-align: center;
+}
+.error-msg{
+    color: red;
+    font-size: 18px;
+    text-align: center;
+}
+@media (max-width:750px) {
+    form{
+        width: 100%;
+        gap: 10px;
+    }
+}
+@media (min-width:750px) and (max-width:800px){
+    form{
+        width: 50%;
+    }
+}
