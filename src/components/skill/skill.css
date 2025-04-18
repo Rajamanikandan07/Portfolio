@@ -74,6 +74,9 @@
     .frontend-box,.backend-box,.other-box{
         width: 95%;
     }
+    .backend-box h1{
+        font-size: 30px;
+    }
 }
 @media (min-width:750px) and (max-width:800px){
     .frontend-box,.backend-box,.other-box{
